@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Frontend Development Week 1
+		</title>
+		<meta charset="utf-8" />
+	    <meta name="description" content="Opdracht 2 Frontend Development" />
+	    <meta name="author" content="Ruben de Wit" />
+	    <meta name="keywords" content="frontend, development, week 1, opdracht 2" />	
+	</head>
+	<body>
+		<header>
+			<nav>
+				<ol>
+					<li><a href="#opleiding"> Opleiding </a></li>
+					<li><a href="#aanmelden"> Aanmelden </a></li>
+				</ol>
+			</nav>	
+		</header>
+		<main>
+			<section>
+				<article>
+					<p> Artikel </p>
+				</article>
+				<article>
+					<p> Artikel </p>
+				</article>
+			</section>
+		</main>
+		<aside>
+				<p> Banner </p>
+			</aside>
+		<footer>
+			<p> Copyright Ruben de Wit - 2014 </p>
+		</footer>
+	</body>
+</html>
