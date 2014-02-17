@@ -50,32 +50,14 @@ video {
 	width: 100%;
 }
 label {
-	width: 80px;
+	width: 120px;
 	float: left;
 	text-align: right;
 	margin-right: 10px;
 	display: block;
 }
-table {
-	border-collapse: collapse;
-	border: 3px solid black;
-	width: 960px;
-	padding: 10px;
-	float: left;
-}
-table label {
-	width: 150px;
-	float: left;
-	text-align: right;
-	margin-right: 10px;
-	display: block;
-}
-table ol {
+ol {
 	list-style-type: none;
-}
-th, td {
-	border: 1px solid black;
-	width: 500px;
 }
 textarea {
 	width: 300px;
