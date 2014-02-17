@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Frontend Development Week 1
+		</title>
+		<meta charset="utf-8" />
+	    <meta name="description" content="Opdracht 2 Frontend Development" />
+	    <meta name="author" content="Ruben de Wit" />
+	    <meta name="keywords" content="frontend, development, week 1, opdracht 2" />
+
+	    <link rel="stylesheet" href="css/style.css">	
+	</head>
+	<body>
+		<div id="wrapper">
+			<header>
+				<nav>
+					<ol>
+						<li><a href="index.html"> Opleiding </a></li>
+						<li><a href="#aanmelden"> Aanmelden </a></li>
+					</ol>
+				</nav>	
+			</header>
+			<main>
+				<section>
+					<article id="aanmelden">
+						<h1>Aanmelden</h1>
+							<p>	
+								Bent u geinteresseerd in samenwerken met CMD Amsterdam? Dat kan!
+								Tijdens de opleiding werken studenten aan projecten voor echte opdrachtgevers. Ook
+								lopen de studenten stage, in het tweede en afstudeerjaar.
+							</p>
+							<p class="italic">	
+								CMD Amsterdam zoekt altijd naar positieve verbindingen met de creatieve stad
+								Amsterdam.
+							</p>
+							<p>
+								Voor het aanmelden van stageplekken of projecten kunt u onderstaand formulier invullen.
+								Wij nemen zo nodig contact met u op nadat het formulier is verstuurd.
+								Voor vragen of opmerkingen kunt u <a href="http://www.hva.nl/opleiding/voltijd/communication-and-multimedia-design/contact/">contact</a> met ons opnemen.
+							</p>
+							<p> Contactgegevens:							
+								<form method="POST" action="" class="formAanmelden">							
+									<label for="naam">Naam:</label>			<input type="text" id="naam"><br>
+									<label for="bedrijf">Bedrijf:</label>	<input type="text" id="bedrijf"><br>
+									<label for="adres">Adres:</label>		<input type="text" id="adres"><br>
+									<label for="postcode">Postcode:</label>	<input type="text" id="postcode"><br>
+									<label for="plaats">Plaats:</label>		<input type="text" id="plaats"><br>
+									<label for="telefoon">Telefoon:</label>	<input type="phone" id="telefoon"><br>
+									<label for="email">Email:</label>		<input type="email" id="email">
+							</p>
+							<p>
+								Ik wil mij aanmelden:<br>
+								<input type="radio" name="rolbedrijf" value="project">Voor een project<br>
+								<input type="radio" name="rolbedrijf" value="stage">Als stagebedrijf
+							</p>
+							<p>
+								<table>
+									<tr>
+										<th>Project</th>
+										<th>Stage</th>
+									</tr>
+									<tr>
+										<td>
+											<ol>
+												<li><label for="titel">Titel:</label>						<input type="text" name="titel"></li>
+												<li><label for="opdracht">Opdrachtomschrijving:</label> 	<input type="text" id="opdracht"></li>
+												<li><label for="doelgroep">Doelgroepomschrijving:</label>	<input type="text" id="doelgroep"></li>
+												<li><label for="doelstelling">Doelstelling:</label>			<input type="text" id="doelstelling"></li>
+												<li><label for="looptijd">Looptijd:</label>					<input type="text" id="looptijd"></li>
+												<li><label for="deadline">Deadline:</label>					<input type="date" id="deadline"></li>
+											</ol>
+										</td>
+										<td>
+											Geschikt voor:
+											<ol>
+												<li><input type="radio" name="rolstage" value="tweedejaars">Tweedejaars studenten</li>
+												<li><input type="radio" name="rolstage" value="eerstejaars">Eerstejaars studenten</li>
+												<li><input type="radio" name="rolstage" value="onbekend">Onbekend</li>
+											</ol>
+										</td>	
+									</tr>
+									<tr>
+										<td>
+											Geschikt voor:
+											<ol>
+												<li><input type="radio" name="rolproject" value="eerstejaars">Eerstejaars studenten</li>
+												<li><input type="radio" name="rolproject" value="tweedejaars">Tweedejaars studenten</li>
+												<li><input type="radio" name="rolproject" value="derdejaars">Derdejaars studenten</li>
+												<li><input type="radio" name="rolproject" value="afstudeer">Afstudeer studenten</li>
+												<li><input type="radio" name="rolproject" value="onbekend">Onbekend</li>
+											</ol>
+										</td>		
+										<td>
+											<ol>
+												<li>Hoe lang is de stage?<br>
+													<input type="radio" name="duur" value="tien">Tien weken<br>
+													<input type="radio" name="duur" value="twintig">Twintig weken<br></li>
+												<li>
+													Begin datum:
+													<input type="date" name="datum" id="datum"></li>
+											</ol>
+										</td>	
+									</tr>
+									<tr>
+										<td>
+										</td>
+										<td>										
+											<label for="werkzaamheden">Beschrijving van werkzaamheden:</label><textarea id="werkzaamheden"></textarea>
+										</td>
+									</tr>
+									<tr>
+										<td>
+										</td>
+										<td>
+											Beschrijving stagebedrijf:
+											<ol>
+												<li><label for="stagenaam">Bedrijfsnaam:</label>		<input type="text" id="stagenaam"></li>
+												<li><label for="stageadres">Adres:</label>				<input type="text" id="stageadres"></li>
+												<li><label for="stagepostcode">Postcode:</label>		<input type="text" id="stagepostcode"></li>
+												<li><label for="stageplaats">Plaats:</label>			<input type="text" id="stageplaats"></li>
+												<li><label for="stagesector">Sector:</label>			<input type="text" id="stagesector"></li>
+												<li><label for="stagebusiness">Core business:</label>	<input type="textarea" id="stagebusiness"></li>
+												</li>
+											</ol>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<label for="opmerkingproject">Opmerking:</label><textarea id="opmerkingproject" class="opmerking"></textarea>
+										</td>
+										<td>
+											<label for="opmerkingstage">Opmerking:</label><textarea id="opmerkingstage" class="opmerking"></textarea>
+										</td>
+									</tr>
+									<tr>
+										<td>
+										</td>
+										<td>										
+											<input type="submit" id="submit" value="Verzend">
+										</td>
+									</tr>											
+								</table>							
+							</p>			
+						</form>
+					</article>					
+				</section>
+			</main>
+			<!-- aside>
+					<p> Banner </p>
+				</aside -->
+			<footer>
+				<p> Copyright Ruben de Wit - 2014 </p>
+			</footer>
+		</div>	
+	</body>
+</html>
