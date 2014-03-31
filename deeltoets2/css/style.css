@@ -5,9 +5,27 @@
 	color: black;
 	margin: 5px;
 	padding: 5px;
+	color: #417900;
 }
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
     display: block;
+}
+body {
+	width: 960px;
+	margin: auto;
+	background-image: -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		color-stop(0, #FF0062),
+		color-stop(1, #45B7E0),
+		color-stop(1, #454545));
+
+		background-image: -o-linear-gradient(bottom, #FF0062 0%, #45B7E0 100%, #454545 100%);
+		background-image: -moz-linear-gradient(bottom, #FF0062 0%, #45B7E0 100%, #454545 100%);
+		background-image: -webkit-linear-gradient(bottom, #FF0062 0%, #45B7E0 100%, #454545 100%);
+		background-image: -ms-linear-gradient(bottom, #FF0062 0%, #45B7E0 100%, #454545 100%);
+		background-image: linear-gradient(to bottom, #FF0062 0%, #45B7E0 100%, #454545 100%);
 }
 a {
 	color: #0089CA;
@@ -26,11 +44,6 @@ nav a:hover {
 }
 ol {
 	list-style-type: none;
-}
-body {
-	width: 960px;
-	margin: auto;
-	background: #DADADA;
 }
 header {
 	-webkit-animation: bounce 2s linear;
@@ -100,6 +113,9 @@ section:nth-of-type(3) p:nth-of-type(even) {
 section:nth-last-of-type(2) p:first-of-type {
 	font-weight: bold;
 }
+section:nth-of-type(3n) p {
+	color: #002B79;
+}
 section:last-of-type a:hover {	
 	-webkit-animation: rainbow 3s ease-in-out, shake 2s ease-in-out;
 }
@@ -116,6 +132,7 @@ video {
 	width: 60%;
 	height: 60%;
 	margin-left: 20%;
+	-webkit-animation: spasm 30ms linear infinite;
 }
 footer{
 	margin: 50px 87px;
@@ -315,3 +332,10 @@ input[type="submit"]:hover {
 		40%, 60% {-webkit-transform: scale(1.1) rotate(-3deg);}
 		80%, 100% {-webkit-transform: scale(1) rotate(0);}
 	}
+
+/* Spasm */
+	@-webkit-keyframes spasm {
+		0%, 100% {-webkit-transform: translateX(0px) translateY(0px);}
+		25%, 75% {-webkit-transform: translateX(10px) translateY(-5px);}
+		50% {-webkit-transform: translateX(5px) translateY(5px);}
+	}	
