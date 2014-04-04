@@ -40,7 +40,7 @@ header > a:nth-of-type(2) {
 ================================================== */
 
 nav {
-	background-color: hsla(20, 88%, 54%, 1);
+	background-color: hsla(20, 88%, 48%, 1);
 	font-size: 1.3em;
 	border-bottom: 0.2em solid hsla(20, 88%, 45%, 1);
 }
@@ -150,34 +150,55 @@ a {
 		clear: both;
 		width: 100%;
 		padding: 1em 10% 1em 10%;
+		margin: 1em 0 0 0;
 		color: hsla(360, 100%, 100%, 1);
 		background-color: hsla(20, 88%, 54%, 1);				
 		border-top: 0.2em solid hsla(20, 88%, 45%, 1);
 	}
+
 	footer > section:nth-of-type(-n+2) {
-		width: 49%;
+		width: 50%;
 		float: left;
 	}
+		footer > section:nth-of-type(-n+2) p {
+			padding-right: 2em;
+		}
+
 	footer > section:nth-of-type(2) {
 		float: right;
 	}
-	/*footer > section:nth-of-type(3) {
-		clear: both;
-		float: right;
-	}*/
+
 	footer > section:nth-of-type(3) > ul {
 		display: none;
 	}
-	footer > section:nth-of-type(3) > h1 {
-		cursor: pointer;
+		footer > section:nth-of-type(3) > ul > li{
+			font-size: 1.25em;
+		}
+		footer > section:nth-of-type(3) > ul > li > ul > li{
+			font-size: 0.8em;
+		}
+		footer > section:nth-of-type(3) > h1 {
+			cursor: pointer;
+		}
+
+	/*footer > section:nth-of-type(4) {
+		position: absolute;
+		top: 9%;
+		right: 1.50%;
 	}
-	/*footer > section:nth-of-type(4) > h1:after {
-		content: url(../img/arrow-down.png);
-		padding-left: 0.3em;
-	}*/
-	footer > section:nth-of-type(2n+1){
+		footer > section:nth-of-type(4) h1 {
+			display: none;
+		}*/
+
+	footer > section:last-of-type {
 		clear: both;
+		text-align: center;
+		padding-top: 1em;
 	}
+		footer > section:last-of-type h1 {
+			display: none;
+		}
+
 	footer ul,
 	footer li {
 		padding: 0;
