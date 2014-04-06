@@ -498,3 +498,6 @@ body {
 	/*padding: 0 1em;*/
 }
 
+html .no-js {
+	background-color: #ff8ae8;
+}
