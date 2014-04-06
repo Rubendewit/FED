@@ -8,23 +8,19 @@ html {
 	color: hsla(0, 0%, 16%, 1);
 }
 
-h1, h2, h3, h4, h5, h6 {
-	color: hsla(0, 0%, 20%, 1);
-}
-
-body {
-	background-color: hsla(0, 0%, 97%, 1);
+body {	
 	width: 100%;
 	margin: 0;
 	padding: 0;
+	background-color: hsla(0, 0%, 97%, 1);
 	/*overflow: hidden;*/
 }
 
 header {
-	width: 100%;
-	background-color: hsla(20, 88%, 54%, 1);
+	width: 100%;	
 	height: 5em;
 	padding: 1.2em;
+	background-color: hsla(20, 88%, 54%, 1);
 	border-bottom: 0.2em solid hsla(20, 88%, 45%, 1);
 }
 
@@ -48,12 +44,28 @@ header > a:nth-of-type(2) {
     text-indent: -9999em;
 }
 
+h1, h2, h3, h4, h5, h6 {
+	color: hsla(0, 0%, 20%, 1);
+}
+
+ul {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+	color: hsla(0, 0%, 0%, 1);
+}
+
+
 /* Navigation
 ================================================== */
 
 nav {
 	background-color: hsla(20, 88%, 48%, 1);
 	font-size: 1.3em;
+	font-family: Arial, Verdana, sans-serif;
+	color: hsla(360, 100%, 100%, 1);
 	border-bottom: 0.2em solid hsla(20, 88%, 45%, 1);
 }
 
@@ -65,12 +77,23 @@ nav a {
 }
 
 nav ul {
-	display: none;
+	display: inline-block;
 	width: 100%;
 }
-	nav ul:first-of-type {
-		display: inline-block;
+
+nav ul li {
+	-webkit-transition: 100ms linear all;
+	   -moz-transition: 100ms linear all;
+		 -o-transition: 100ms linear all;	
+			transition: 100ms linear all;
+}
+	nav ul li:hover {
+		padding: 0 0 0 0.5em;
 	}
+
+nav > ul > li > ul{
+	display: none;
+}
 
 nav li {
 	list-style: none;
@@ -87,6 +110,10 @@ main {
 }
 main p {
 	padding-bottom: 1.2em;
+}
+main > article > section > form > section,
+main > article > section > form > input[type="submit"] {
+	display: none;
 }
 
 section p {
@@ -115,16 +142,91 @@ article section img {
 	margin-left: 10%;
 }
 
-a {
-	text-decoration: none;
-	color: hsla(0, 0%, 0%, 1);
+article > section a {
+	color: hsla(20, 88%, 45%, 1);
 }
+
+/* Form
+================================================== */
+
+main > article > section > form {
+	margin: 0 0 1em 0;
+	padding: 0.5em;
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 0.9em;
+	background-color: hsla(0, 0%, 90%, 1);
+	border-radius: 1em;
+}
+
+fieldset { 
+	border: none;
+}
+
+legend { 
+	font-weight: bold;
+}
+
+label {
+	display: inline-block;
+	width: 9.375em;
+	margin: 0.1em 1em 0 -1em;
+	vertical-align: top;
+}
+
+label + input[type="radio"] {
+	margin: 0.5em 1.75em 0 0;
+	float: left;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"] {
+	height: 1.7em;
+	border: none;
+	background: hsla(360, 100%, 100%, 1);
+	box-shadow: 0.2em 0.2em 0 0.1em hsla(0, 0%, 0%, 0.05);
+}
+
+label[for="naam"]:after,
+label[for="bedrijf"]:after,
+label[for="email"]:after {
+	content: " *";
+	color: red;
+}
+
+textarea {
+	width: 100%;
+	height: 6.25em;
+	resize: none;
+	border: none;
+	box-shadow: 0.2em 0.2em 0 0.1em hsla(0, 0%, 0%, 0.05);
+}
+
+form > section:last-of-type > fieldset:nth-of-type(5) textarea {
+	height: 3em;
+	width: 12em;
+	margin: 0.3em 0 0 0.2em;
+}
+
+main > article > section > form > input[type="submit"] {
+	width: 5.7em;
+	height: 2.25em;
+	margin: 0 0 0.8em 0.8em;
+	font-size: 1.1em;
+	font-weight: bold;
+	color: hsla(100, 100%, 100%, 1);
+	background-color: hsla(20, 88%, 54%, 1);
+	box-shadow: 0.2em 0.2em 0 0.1em hsla(0, 0%, 0%, 0.05);
+	border: none;
+}
+
 
 
 /* Media Queries
 ================================================== */
 
-@media (min-width: 47.5em) {
+@media (min-width: 49.25em) {
 
 	header {
 		height: 8em;
@@ -140,17 +242,26 @@ a {
 		display: none;
 	}
 
+	/* Navigation
+	================================================== */
+
 	nav {
-		float: left;
-		width: 25%;
-		padding-left: 1em;
-		font-size: 1em;
+		width: 100%;
+		margin: 0;
+		padding: 0;
 		border: none;
+		font-size: 1em;
 		background-color: hsla(0, 0%, 97%, 1);
-		display: block !important;
+		display: inline-block !important;
 	}
 
-	nav ul {
+	nav li {
+		width: 20%;
+		margin: -1em 0 0 0;
+		float: left;
+		text-align: center;
+		background-color: hsla(20, 88%, 48%, 1);
+		border-bottom: 0.2em solid hsla(20, 88%, 45%, 1);
 		display: inline-block;
 	}
 
@@ -159,20 +270,27 @@ a {
 		padding: 0;
 	}
 
-	nav a {
-		color: hsla(0, 0%, 0%, 1);
+	nav ul li:hover {
+		padding: 0;
+		background-color: hsla(20, 88%, 45%, 1);
 	}
+		
 
 	main {
 		float: left;
-		width: 53%;
+		width: 66%;
+		margin: 0 0 0 1em;
 	}
 
-	body > section:first-of-type {
+	body > section {
 		display: inline-block;
 		float: right;
 		padding: 1.1em 1em 0 0;
 	}
+
+	textarea {
+		width: 65%;
+	}	
 	
 	/* Aside
 	================================================== */
@@ -356,22 +474,13 @@ a {
 		width: 65.500em;
 	}*/
 
-	nav { 
-		width: 20%;
-	}
+	/*nav { 
+		width: 100%;
+	}*/
 
 	main {
-		width: 57%;
-	}
-
-	body > section:first-of-type {
-		display: none;
-	}
-
-	body > section:nth-of-type(2) {
-		display: inline-block;
-		float: right;
-		padding: 1.1em 1em 0 0;
+		width: 75%;
+		padding: 0 0 0 4.75em;
 	}
 
 	/*aside {
@@ -389,37 +498,3 @@ body {
 	/*padding: 0 1em;*/
 }
 
-
-/* Form
-================================================== */
-	
-label {
-	width: 150px;
-	float: left;
-	text-align: right;
-	margin-right: 10px;
-	display: block;
-}
-textarea {
-	width: 350px;
-	height: 100px;
-	resize: none;
-}
-
-[for="naam"]:after,
-[for="bedrijf"]:after,
-[for="email"]:after {
-	content: " *";
-	color: red;
-}
-input[type="text"],
-input[type="email"],
-input[type="tel"],
-input[type="date"] {
-	border: none;
-	background: #FFFFFF;
-	position: relative;
-}
-input[type="radio"]:focus {
-	box-shadow: 0 0 0 0;
-}

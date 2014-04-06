@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		
+	<head>		
 		<!-- Meta -->
 		<meta charset="utf-8" />
 	    <meta name="description" content="CMDA Intranet" />
@@ -19,12 +18,11 @@
 		<script src="js/script.js"></script>
 	    
 	    <title>
-			CMD :: Intranet		
+			CMD :: Aanmelden		
 		</title>
-
 	</head>
-	<body>
-		
+
+	<body>		
 		<header>
 			<a href="index.html">CMD Amsterdam</a>
 			<a href="#">Menu</a>			
@@ -37,22 +35,7 @@
 				<li><a href="index.html">Opleiding</a></li>
 				<li><a href="#">Onderwijsprogramma</a></li>
 				<li><a href="#">Organisatie</a></li>
-				<li><a href="#">Stages en Projecten</a></li>
-			</ul>
-
-			<!-- Submenu Opleidingspagina -->
-			<ul>
-				<li><a href="#">Visie &amp; Beleid</a></li>
-				<li><a href="#">Opbouw Studieprogramma</a></li>
-				<li><a href="#">Competenties</a></li>
-				<li><a href="#">Diploma</a></li>
-				<li><a href="#">Beroepen</a></li>
-			</ul>
-
-			<!-- Submenu Aanmelden -->
-			<ul>
-				<li><a href="aanmelden.html">Stages</a></li>
-				<li><a href="aanmelden.html">Projecten</a></li>
+				<li><a href="aanmelden.html">Stages en Projecten</a></li>
 			</ul>
 		</nav>
 				
@@ -61,6 +44,7 @@
 		<main>
 			<article>
 				<h1>Aanmelden</h1>
+					
 					<section>
 						<p>	
 							Bent u geinteresseerd in samenwerken met CMD Amsterdam? Dat kan!
@@ -77,68 +61,72 @@
 							Voor vragen of opmerkingen kunt u <a href="http://www.hva.nl/opleiding/voltijd/communication-and-multimedia-design/contact/">contact</a> met ons opnemen.
 						</p>
 					</section>
-					<section>							
+
+					<section>						
 						<form method="POST" action="">						
 							<fieldset>
 								<legend> Contactgegevens: </legend>	
 									<ul>
-										<li><label for="naam">Naam:</label>			<input type="text" id="naam"></li>
-										<li><label for="bedrijf">Bedrijf:</label>	<input type="text" id="bedrijf"></li>
-										<li><label for="adres">Adres:</label>		<input type="text" id="adres"></li>
-										<li><label for="postcode">Postcode:</label>	<input type="text" id="postcode"></li>
-										<li><label for="plaats">Plaats:</label>		<input type="text" id="plaats"></li>
-										<li><label for="telefoon">Telefoon:</label>	<input type="tel" id="telefoon"></li>
-										<li><label for="email">Email:</label>		<input type="email" id="email"></li>
+										<li><label for="naam">Naam</label>			<input type="text" id="naam"></li>
+										<li><label for="bedrijf">Bedrijf</label>	<input type="text" id="bedrijf"></li>
+										<li><label for="adres">Adres</label>		<input type="text" id="adres"></li>
+										<li><label for="postcode">Postcode</label>	<input type="text" id="postcode"></li>
+										<li><label for="plaats">Plaats</label>		<input type="text" id="plaats"></li>
+										<li><label for="telefoon">Telefoon</label>	<input type="tel" id="telefoon"></li>
+										<li><label for="email">Email</label>		<input type="email" id="email"></li>
 									</ul>	
 							</fieldset>
 							<fieldset>
 								<legend> Ik wil mij aanmelden:</legend>
-									<input type="radio" name="aanmelden" value="project">Voor een project
-									<input type="radio" name="aanmelden" value="stage">Als stagebedrijf
+									<ul>
+										<li><label for="aanmeldenp">Voor een project</label>	<input type="radio" name="aanmelden" id="aanmeldenp" value="project"></li>
+										<li><label for="aanmeldens">Als stagebedrijf</label>	<input type="radio" name="aanmelden" id="aanmeldens" value="stage"></li>
+									</ul>	
 							</fieldset>
-					</section>
-					<section>			
-						<h1> Project </h1>		
+
+						<section>
 							<fieldset>
 								<legend>Project</legend>
 								<ul>
-									<li><label for="titel">Titel:</label>						<input type="text" id="titel"></li>
-									<li><label for="opdracht">Opdrachtomschrijving:</label> 	<input type="text" id="opdracht"></li>
-									<li><label for="doelgroep">Doelgroepomschrijving:</label>	<input type="text" id="doelgroep"></li>
-									<li><label for="doelstelling">Doelstelling:</label>			<input type="text" id="doelstelling"></li>
-									<li><label for="looptijd">Looptijd:</label>					<input type="text" id="looptijd"></li>
-									<li><label for="deadline">Deadline:</label>					<input type="date" id="deadline"></li>
+									<li><label for="titel">Titel</label>						<input type="text" id="titel"></li>
+									<li><label for="opdracht">Opdrachtomschrijving</label> 		<input type="text" id="opdracht"></li>
+									<li><label for="doelgroep">Doelgroepomschrijving</label>	<input type="text" id="doelgroep"></li>
+									<li><label for="doelstelling">Doelstelling</label>			<input type="text" id="doelstelling"></li>
+									<li><label for="looptijd">Looptijd</label>					<input type="text" id="looptijd"></li>
+									<li><label for="deadline">Deadline</label>					<input type="date" id="deadline"></li>
 								</ul>	
 							</fieldset>									
 							<fieldset>
 								<legend>Geschikt voor</legend>
-								<ul>
-									<li><input type="radio" name="studentenp" value="eerstejaars">Eerstejaars studenten</li>
-									<li><input type="radio" name="studentenp" value="tweedejaars">Tweedejaars studenten</li>
-									<li><input type="radio" name="studentenp" value="derdejaars">Derdejaars studenten</li>
-									<li><input type="radio" name="studentenp" value="afstudeer">Afstudeer studenten</li>
-									<li><input type="radio" name="studentenp" value="onbekend">Onbekend</li>
-								</ul>		
+									<ul>
+										<li><label for="studentenp1">Eerstejaars</label>	<input type="radio" name="studentenp" id="studentenp1" value="eerstejaars"></li>
+										<li><label for="studentenp2">Tweedejaars</label>	<input type="radio" name="studentenp" id="studentenp2" value="tweedejaars"></li>
+										<li><label for="studentenp3">Derdejaars</label>		<input type="radio" name="studentenp" id="studentenp3" value="derdejaars"></li>
+										<li><label for="studentenp4">Afstudeer</label>		<input type="radio" name="studentenp" id="studentenp4" value="afstudeer"></li>
+										<li><label for="studentenp5">Onbekend</label>		<input type="radio" name="studentenp" id="studentenp5" value="onbekend"></li>
+									</ul>		
 							</fieldset>
 							<fieldset>
 								<legend>Opmerking</legend>
 								<textarea id="opmerkingproject" class="opmerking"></textarea>
 							</fieldset>
-					</section>
-					<section>
-						<h1> Stage </h1>
+						</section>
+						
+						<section>
 							<fieldset>
 								<legend>Geschikt voor</legend>
-								<ul>
-									<li><input type="radio" name="studentens" value="tweedejaars">Tweedejaars studenten</li>
-									<li><input type="radio" name="studentens" value="eerstejaars">Eerstejaars studenten</li>
-									<li><input type="radio" name="studentens" value="onbekend">Onbekend</li>
-								</ul>	
+									<ul>
+										<li><label for="studentens1">Eerstejaars</label>	<input type="radio" name="studentens" id="studentens1" value="tweedejaars"></li>
+										<li><label for="studentens2">Tweedejaars</label>	<input type="radio" name="studentens" id="studentens2" value="eerstejaars"></li>
+										<li><label for="studentens3">Onbekend</label>		<input type="radio" name="studentens" id="studentens3" value="onbekend"></li>
+									</ul>	
 							</fieldset>										
 							<fieldset>
 								<legend>Hoe lang is de stage?</legend>	
-									<input type="radio" name="duur" value="tien">Tien weken
-									<input type="radio" name="duur" value="twintig">Twintig weken
+									<ul> 
+										<li><label for="duur1">Tien weken</label>		<input type="radio" name="duur" id="duur1" value="tien"></li>
+										<li><label for="duur2">Twintig weken</label>	<input type="radio" name="duur" id="duur2" value="twintig"></li>
+									</ul>	
 							</fieldset>
 							<fieldset>
 								<legend>Begin datum</legend>		
@@ -151,36 +139,37 @@
 							<fieldset>
 								<legend>Beschrijving stagebedrijf</legend>
 									<ul>
-										<li><label for="stagenaam">Bedrijfsnaam:</label>		<input type="text" id="stagenaam"></li>
-										<li><label for="stageadres">Adres:</label>				<input type="text" id="stageadres"></li>
-										<li><label for="stagepostcode">Postcode:</label>		<input type="text" id="stagepostcode"></li>
-										<li><label for="stageplaats">Plaats:</label>			<input type="text" id="stageplaats"></li>
-										<li><label for="stagesector">Sector:</label>			<input type="text" id="stagesector"></li>
-										<li><label for="stagebusiness">Core business:</label>	<textarea id="stagebusiness"></textarea></li>
+										<li><label for="stagenaam">Bedrijfsnaam</label>			<input type="text" id="stagenaam"></li>
+										<li><label for="stageadres">Adres</label>				<input type="text" id="stageadres"></li>
+										<li><label for="stagepostcode">Postcode</label>			<input type="text" id="stagepostcode"></li>
+										<li><label for="stageplaats">Plaats</label>				<input type="text" id="stageplaats"></li>
+										<li><label for="stagesector">Sector</label>				<input type="text" id="stagesector"></li>
+										<li><label for="stagebusiness">Core business</label>	<textarea id="stagebusiness"></textarea></li>
 									</ul>
 							</fieldset>		
 							<fieldset>		
 								<legend>Opmerking</legend>
 									<textarea id="opmerkingstage" class="opmerking"></textarea>
-							</fieldset>								
+							</fieldset>
+						</section>
+
 								<input type="submit" value="Verzend">
 						</form>
-					</section>					
+					</section>
 			</article>
+
 		</main>
 
-		<section><!-- Small Feed -->
-			<script src="http://output18.rssinclude.com/output?type=js&amp;id=862282&amp;hash=124bc20e2f9ece41579461777e8419d0"></script>
-		</section>	
 		<section><!-- Bigger Feed -->
 			<script src="http://output80.rssinclude.com/output?type=js&amp;id=862267&amp;hash=d8c13357525cabfa9c57df2ab55e71d7"></script>
 		</section>
 
 		<!-- Aside teksten en info: Laatste mededelingen, Agenda, Twitter -->
-		<aside>
-			
+		<aside>			
 			<section>
+
 				<h1><a href="#">Laatste mededelingen</a></h1>
+				
 				<section>
 					<h1>Teamproject - Usabilitylab rooster</h1>
 					<p>
@@ -190,6 +179,7 @@
 						<a href="#">lees verder</a>
 					</p>
 				</section>
+
 				<section>
 					<h1>V2 assessments rooster Blok 3</h1>
 					<p>
@@ -199,6 +189,7 @@
 						<a href="#">lees verder</a>
 					</p>
 				</section>
+
 				<section>
 					<h1>Portfoliogesprekken V1</h1>
 					<p>
@@ -208,6 +199,7 @@
 						<a href="#">lees verder</a>
 					</p>
 				</section>
+
 				<section>
 					<h1>Mediasociologie: tentamen en huiswerk week 7</h1>
 					<p>
@@ -217,6 +209,7 @@
 						<a href="#">lees verder</a>
 					</p>
 				</section>
+
 				<section>
 					<h1>Verdien 2 SRP!</h1>
 					<p>
@@ -226,9 +219,11 @@
 						<a href="#">lees verder</a>
 					</p>
 				</section>
+
 			</section>
 
-			<section>				
+			<section>	
+
 				<h1><a href="#">Uitagenda</a></h1>
 				<section>
 					<h1>Fiber Festival</h1>
@@ -239,6 +234,7 @@
 						<a href="#">lees verder</a>
 					</p>
 				</section>
+
 				<section>
 					<h1>Appril</h1>
 					<h2>Van <time datetime="2012-04-02">2012-4-2</time> tot <time datetime="2012-04-30">2012-4-30</time> in Amsterdam</h2>
@@ -248,7 +244,9 @@
 						<a href="#">lees verder</a>
 					</p>
 				</section>
+
 				<section>
+
 					<h1>Mobilism 2012</h1>
 					<h2>Van <time datetime="2012-05-10">2012-5-10</time> tot <time datetime="2012-05-11">2012-5-11</time> in Tuschinski</h2>
 					<p>
@@ -257,37 +255,33 @@
 						<a href="#">lees verder</a>
 					</p>
 				</section>
+
 			</section>
-
-			<!-- <section>
-				<a class="twitter-timeline" href="https://twitter.com/cmdhva" data-widget-id="452558493417889792">Tweets by @cmdhva</a>
-					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
-					</script>
-			</section> -->
-
-
 
 		</aside>
 
 		<!-- Footer informatie -->
 		<footer>
+
 			<section>
-				<h1>About</h1>
+				<h1><a href="#">About</a></h1>
 				<p>
 					CMD Amsterdam is een ontwerp opleiding voor Interactieve Media.
 					Op de opleiding Communication &amp; Multimedia Design (CMD) Amsterdam leer je alles over het ontwerpen van online interactieve media. Dit betekent begrijpen, bedenken en maken van interactieve mediatoepassingen zoals websites, mobiele applicaties en interactieve televisie.
 				</p>	
 			</section>
+			
 			<section>
-				<h1>Contact</h1>
+				<h1><a href="#">Contact</a></h1>
 				<p>CMD Amsterdam <br>
 					Bezoekadres: Gebouw Theo Thijssenhuis (TTH), Wibautstraat 2-4, 1091 GM Amsterdam <br>
 					Postadres: Postbus 1025, 1000 BA Amsterdam <br>
 					Telefoon: 020 595 1855 <br>
-					Email: <a href="#">info@cmd.hva.nl</a> <br>
-					RSS: <a href="#">Feed intranet</a> <br>
+					Email: <a href="mailto:info@cmd.hva.nl">info@cmd.hva.nl</a> <br>
+					RSS: <a href="https://cmd.dmci.hva.nl/NL/_layouts/listfeed.aspx?List=%7b82E69CA2-148D-4085-8135-9773B66AB68F%7d">Feed intranet</a> <br>
 				</p>	
 			</section>
+			
 			<section>
 				<h1>Sitemap</h1>
 					<ul>
@@ -330,6 +324,7 @@
 						</li>	
 					</ul>
 			</section>
+			
 			<section>
 				<h1>Zoeken</h1>
 				<form>
@@ -337,11 +332,13 @@
 					<input type="submit" value="Zoeken">
 				</form>
 			</section>
+			
 			<section>
 				<h1>Credits</h1>
 				© 2007 Hogeschool van Amsterdam - DMCI - CMD Amsterdam
 				<a href="#">Geef ons feedback</a>
-			</section>	
+			</section>
+
 		</footer>
 
 	</body>
