@@ -498,6 +498,28 @@ body {
 	/*padding: 0 1em;*/
 }
 
-html .no-js {
-	background-color: #ff8ae8;
+
+/* Modernizr
+================================================== */
+
+.no-cssanimations main > article > section > form > section,
+.no-cssanimations main > article > section > form > input[type="submit"] {
+	display: block;
+}
+
+.no-boxshadow input,
+.no-boxshadow textarea  {
+	border-right: 0.2em solid #dadada;
+	border-bottom: 0.2em solid #dadada;
+}
+
+.no-video video {
+	display: none;
+}
+
+.no-hsla header{
+	background-color: #f16722;
+}
+.no-hsla body{
+	background-color: #f7f7f7;
 }
